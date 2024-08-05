@@ -18,39 +18,37 @@ if (userTime >= 6 && userTime < 12) {
 console.log(renameVar + ` ${userName}`);
 */
 
-let result = '';
+let result = "";
 let button = document.getElementsByClassName("button");
 button.onclick = pickComputerMove();
 function pickComputerMove() {
-   const randomNumber = Math.random();
+  const randomNumber = Math.random();
 
-   let computerMove = '';
+  let computerMove = "";
 
-   if (randomNumber >= 0 && randomNumber < 1 / 3) {
-      computerMove = 'Rock';
-   } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-      computerMove = 'Paper';
-   } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-      computerMove = 'Scissors';
-   }
+  if (randomNumber >= 0 && randomNumber < 1 / 3) {
+    computerMove = "Rock";
+  } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+    computerMove = "Paper";
+  } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+    computerMove = "Scissors";
+  }
 
-   if (computerMove === 'Rock') {
-      result = 'You lose.';
-   } else if (computerMove === 'Paper') {
-      result = 'You win.';
-   } else if (computerMove === 'Scissors') {
-      result = 'Tie.';
-   }
+  if (computerMove === "Rock") {
+    result = "You lose.";
+  } else if (computerMove === "Paper") {
+    result = "You win.";
+  } else if (computerMove === "Scissors") {
+    result = "Tie.";
+  }
 
-   // alert(`You picked Scissors. Computer picked ${computerMove}. ${result}`);
+  // alert(`You picked Scissors. Computer picked ${computerMove}. ${result}`);
 
-   console.log(result);
-   return computerMove;
+  console.log(result);
+  return computerMove;
 }
 let winCount = 0;
-button.onclick = function countWinRate() {
-
-}
+button.onclick = function countWinRate() {};
 
 // var button = document.getElementById("clickme"),
 //    count = 0;
