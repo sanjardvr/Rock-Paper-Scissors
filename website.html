@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Rock-Paper-Scissors </title>
+</head>
+
+<p>Rock Paper Scissors</p>
+<button onclick="
+	const computerMove = pickComputerMove();  
+	playGame('Rock');
+	">Rock</button>
+
+<button onclick="
+	const computerMove = pickComputerMove();
+	playGame('Paper');
+	">Paper</button>
+<button onclick="
+	const computerMove = pickComputerMove();
+	playGame('Scissors');
+	">Scissors</button>
+
+<button onclick="resetScore()">Reset score</button>
+
+<script src="jsProjectRPS.js"></script>
+</body>
+
+</html>
